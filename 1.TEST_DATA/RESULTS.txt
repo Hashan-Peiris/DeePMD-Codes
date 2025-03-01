@@ -1,0 +1,47 @@
+[2025-02-14 21:45:39,962] DEEPMD INFO    # ---------------output of dp test--------------- 
+[2025-02-14 21:45:39,962] DEEPMD INFO    # testing system : deepmd_data
+[2025-02-14 21:45:41,533] DEEPMD INFO    Adjust batch size from 1024 to 2048
+[2025-02-14 21:45:41,556] DEEPMD INFO    Adjust batch size from 2048 to 4096
+[2025-02-14 21:45:41,588] DEEPMD INFO    Adjust batch size from 4096 to 8192
+[2025-02-14 21:45:41,643] DEEPMD INFO    Adjust batch size from 8192 to 16384
+[2025-02-14 21:45:41,746] DEEPMD INFO    Adjust batch size from 16384 to 32768
+[2025-02-14 21:45:41,942] DEEPMD INFO    Adjust batch size from 32768 to 65536
+[2025-02-14 21:45:42,332] DEEPMD INFO    Adjust batch size from 65536 to 131072
+2025-02-14 21:45:52.597598: W external/local_xla/xla/tsl/framework/bfc_allocator.cc:497] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.56GiB (rounded to 1676544000)requested by op load/gradients/Slice_9_grad/Pad
+If the cause is memory fragmentation maybe the environment variable 'TF_GPU_ALLOCATOR=cuda_malloc_async' will improve the situation. 
+Current allocation summary follows.
+Current allocation summary follows.
+2025-02-14 21:45:52.597937: W external/local_xla/xla/tsl/framework/bfc_allocator.cc:508] ****************************************************************************************************
+2025-02-14 21:45:52.597953: W tensorflow/core/framework/op_kernel.cc:1841] OP_REQUIRES failed at pad_op.cc:136 : RESOURCE_EXHAUSTED: OOM when allocating tensor with shape[236,555,1600] and type double on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+2025-02-14 21:46:02.598047: W external/local_xla/xla/tsl/framework/bfc_allocator.cc:497] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.56GiB (rounded to 1676544000)requested by op load/gradients/Slice_10_grad/Pad
+If the cause is memory fragmentation maybe the environment variable 'TF_GPU_ALLOCATOR=cuda_malloc_async' will improve the situation. 
+Current allocation summary follows.
+Current allocation summary follows.
+2025-02-14 21:46:02.598344: W external/local_xla/xla/tsl/framework/bfc_allocator.cc:508] ****************************************************************************************************
+2025-02-14 21:46:02.598353: W tensorflow/core/framework/op_kernel.cc:1841] OP_REQUIRES failed at pad_op.cc:136 : RESOURCE_EXHAUSTED: OOM when allocating tensor with shape[236,555,1600] and type double on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+2025-02-14 21:46:12.598427: W external/local_xla/xla/tsl/framework/bfc_allocator.cc:497] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.56GiB (rounded to 1676544000)requested by op load/gradients/Slice_11_grad/Pad
+If the cause is memory fragmentation maybe the environment variable 'TF_GPU_ALLOCATOR=cuda_malloc_async' will improve the situation. 
+Current allocation summary follows.
+Current allocation summary follows.
+2025-02-14 21:46:12.598741: W external/local_xla/xla/tsl/framework/bfc_allocator.cc:508] ****************************************************************************************************
+2025-02-14 21:46:12.598752: W tensorflow/core/framework/op_kernel.cc:1841] OP_REQUIRES failed at pad_op.cc:136 : RESOURCE_EXHAUSTED: OOM when allocating tensor with shape[236,555,1600] and type double on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+2025-02-14 21:46:22.598829: W external/local_xla/xla/tsl/framework/bfc_allocator.cc:497] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.56GiB (rounded to 1676544000)requested by op load/gradients/Slice_12_grad/Pad
+If the cause is memory fragmentation maybe the environment variable 'TF_GPU_ALLOCATOR=cuda_malloc_async' will improve the situation. 
+Current allocation summary follows.
+Current allocation summary follows.
+2025-02-14 21:46:22.599123: W external/local_xla/xla/tsl/framework/bfc_allocator.cc:508] ****************************************************************************************************
+2025-02-14 21:46:22.599131: W tensorflow/core/framework/op_kernel.cc:1841] OP_REQUIRES failed at pad_op.cc:136 : RESOURCE_EXHAUSTED: OOM when allocating tensor with shape[236,555,1600] and type double on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+[2025-02-14 21:46:22,600] DEEPMD INFO    Adjust batch size from 131072 to 65536
+[2025-02-14 21:46:24,303] DEEPMD INFO    # number of test data : 937 
+[2025-02-14 21:46:24,303] DEEPMD INFO    Energy MAE         : 5.876879e-01 eV
+[2025-02-14 21:46:24,303] DEEPMD INFO    Energy RMSE        : 6.722302e-01 eV
+[2025-02-14 21:46:24,303] DEEPMD INFO    Energy MAE/Natoms  : 1.058897e-03 eV
+[2025-02-14 21:46:24,303] DEEPMD INFO    Energy RMSE/Natoms : 1.211226e-03 eV
+[2025-02-14 21:46:24,303] DEEPMD INFO    Force  MAE         : 4.911066e-02 eV/A
+[2025-02-14 21:46:24,303] DEEPMD INFO    Force  RMSE        : 6.736729e-02 eV/A
+[2025-02-14 21:46:24,303] DEEPMD INFO    Virial MAE         : 5.082221e+00 eV
+[2025-02-14 21:46:24,303] DEEPMD INFO    Virial RMSE        : 7.922267e+00 eV
+[2025-02-14 21:46:24,303] DEEPMD INFO    Virial MAE/Natoms  : 9.157154e-03 eV
+[2025-02-14 21:46:24,303] DEEPMD INFO    Virial RMSE/Natoms : 1.427435e-02 eV
+[2025-02-14 21:46:26,297] DEEPMD INFO    # ----------------------------------------------- 
+
