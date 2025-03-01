@@ -1,0 +1,132 @@
+{
+    "_comment": "that's all",
+    "model": {
+        "type_map": [
+            "B",
+            "C",
+			"Ca",
+			"F",
+			"H",
+			"O"
+        ],
+        "descriptor": {
+            "type": "se_e2_a",
+            "sel": "auto",
+            "rcut_smth": 0.5, 
+            "rcut": 6.0,
+            "neuron": [
+                25,
+                50,
+                100
+            ],
+            "resnet_dt": false,
+            "axis_neuron": 16,
+            "seed": 1,
+            "_comment": " that's all"
+        },
+        "fitting_net": {
+            "neuron": [
+                240,
+                240,
+                240,
+                240
+            ],
+            "resnet_dt": false,
+            "seed": 1,
+            "_comment": " that's all"
+        },
+        "_comment": " that's all"
+    },
+    "learning_rate": {
+        "type": "exp",
+        "decay_steps": 1000,
+        "start_lr": 0.001,
+        "stop_lr": 3.51e-08,
+        "_comment": "that's all"
+    },
+    "loss": {
+        "type": "ener",
+        "start_pref_e": 0.02,
+        "limit_pref_e": 1,
+        "start_pref_f": 1000,
+        "limit_pref_f": 1,
+        "start_pref_v": 0,
+        "limit_pref_v": 0,
+        "_comment": " that's all"
+    },
+    "training": {
+        "training_data": {
+            "systems": [
+                "../../../../../1.DATA/train/1",
+                "../../../../../1.DATA/train/2",
+                "../../../../../1.DATA/train/3",
+                "../../../../../1.DATA/train/4",
+                "../../../../../1.DATA/train/5",
+                "../../../../../1.DATA/train/6", 
+                "../../../../../1.DATA/train/7",
+                "../../../../../1.DATA/train/8",
+                "../../../../../1.DATA/train/11",
+                "../../../../../1.DATA/train/12",
+                "../../../../../1.DATA/train/13",
+                "../../../../../1.DATA/train/14",
+                "../../../../../1.DATA/train/15",
+                "../../../../../1.DATA/train/16",
+                "../../../../../1.DATA/train/17",
+                "../../../../../1.DATA/train/18",
+                "../../../../../1.DATA/train/19",
+                "../../../../../1.DATA/train/20"
+            ],
+            "batch_size": "auto",
+            "_comment": "that's all"
+        },
+        "validation_data": {
+            "systems": [
+                "../../../../../1.DATA/validate/1",
+                "../../../../../1.DATA/validate/2",
+                "../../../../../1.DATA/validate/3",
+                "../../../../../1.DATA/validate/4",
+                "../../../../../1.DATA/validate/5",
+                "../../../../../1.DATA/validate/6",
+                "../../../../../1.DATA/validate/7",
+                "../../../../../1.DATA/validate/8",
+                "../../../../../1.DATA/validate/11",
+                "../../../../../1.DATA/validate/12",
+                "../../../../../1.DATA/validate/13",
+                "../../../../../1.DATA/validate/14",
+                "../../../../../1.DATA/validate/15",
+                "../../../../../1.DATA/validate/16",
+                "../../../../../1.DATA/validate/17",
+                "../../../../../1.DATA/validate/18",
+                "../../../../../1.DATA/validate/19",
+                "../../../../../1.DATA/validate/20"
+            ],
+            "batch_size": "auto",
+            "numb_btch": 20,
+            "_comment": "that's all"
+        },
+		
+        "numb_steps": 2000000,
+        "seed": 10,
+        "disp_file": "lcurve.out",
+        "disp_freq": 1000,
+        "save_freq": 20000,
+		
+        "save_ckpt": "model.ckpt",
+        "max_ckpt_keep": 20,
+		
+        "change_bias_after_training": true,
+        "disp_training": true,
+        "time_training": true,
+		
+        "profiling": false,
+        "profiling_file": "timeline.json",
+        "enable_profiler": false,
+        "tensorboard": true,
+        "tensorboard_log_dir": "log",
+        "tensorboard_freq": 1000,
+		
+        "opt_type": "Adam",
+		"_comment":	"that's all"
+    }
+} 
+
