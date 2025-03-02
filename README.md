@@ -172,8 +172,4 @@ Open issues or pull requests for improvements, suggestions, or new features.
 9. License
 --------------
 
-Provided under an open license (e.g. MIT, Apache). Adapt as needed for your project.
-
-------------------------
-Thank you for reading!
-------------------------
+Provided under an open license (MIT). Adapt as needed for your project!
